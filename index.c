@@ -60,9 +60,10 @@ void search()
             printf("NAME: %s", tmp);
             printf("\nPH.NUMBER: %s\n", store);
             while (getchar() != '\n'); // it will refresh before i using
-            printf("Enter a message: ");
+            printf("Enter a message to send in whatsapp number: ");
+            printf("\nIt will successfully send to contact in whatsapp...");
             fgets(message, sizeof(message), stdin);
-            // scanf("%s",message);
+            // scanf("%s",message); 
             strcat(url, store);
             strcat(url, "&text=");
             strcat(url, message);
